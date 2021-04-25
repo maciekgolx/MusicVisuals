@@ -1,8 +1,8 @@
 # Music Visualiser Project
 
-Name:
+Name: Maciej Golubski
 
-Student Number: 
+Student Number: C19389881
 
 ## Instructions
 - Fork this repository and use it a starter project for your assignment
@@ -12,13 +12,18 @@ Student Number:
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
-
+The assingement is based on the song Dancin(Krono Remix), its been really influential and a good hype song in the recent years of my life. Ive split the project into 3 different visuals, The first one is a visual of 4 hearts, 4 boxes with spheres inside them rotating with angel wings in the middle of the screen and a circle signifying a halo.
+The 2nd visual is based on the idea of people telling you to do but you in the middle revolting against them and pushing back.
+The 3rd visual is based on a guitar and the subsequent notes coming out of it.
 # Instructions
-
+To operate the programme you simply open it up and can move to different visuals using 1, 2 or 3.
 # How it works
-
+Visual 1 is accessed by pressing 1
+Visual 2 is accessed by pressing 2 
+Visual 3 is accessed by pressing 3
 # What I am most proud of in the assignment
-
+There is a lot that i am proud of in this project i feel that the spacing of different objects in Visual 1 is perfect
+as the spacing doesnt collide with anything and makes the screen feel full and exciting. Visual 2 i am proud of the rotations that i have done around the circle. Visual 3 i am proud of the guitar itself. 
 # Markdown Tutorial
 
 This is *emphasis*
