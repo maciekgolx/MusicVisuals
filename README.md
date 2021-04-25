@@ -31,7 +31,7 @@ I am proud of the rotations that i have done around the circle.
 ![An image](images/Visual2.png)
 ###### In Visual 3 
 I am proud of the guitar itself. I had to use a vertexes and beginShape() in order to make the guitar work and look good.
-![An image](images/Visual3.png)
+![An image](images/visual3.png)
 # Markdown Tutorial
 
 This is *emphasis*
