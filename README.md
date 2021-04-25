@@ -18,12 +18,16 @@ The 3rd visual is based on a guitar and the subsequent notes coming out of it.
 # Instructions
 To operate the programme you simply open it up and can move to different visuals using 1, 2 or 3.
 # How it works
-Visual 1 is accessed by pressing 1
-Visual 2 is accessed by pressing 2 
-Visual 3 is accessed by pressing 3
+- Visual 1 is accessed by pressing 1
+- Visual 2 is accessed by pressing 2 
+- Visual 3 is accessed by pressing 3
 # What I am most proud of in the assignment
 There is a lot that i am proud of in this project i feel that the spacing of different objects in Visual 1 is perfect
-as the spacing doesnt collide with anything and makes the screen feel full and exciting. Visual 2 i am proud of the rotations that i have done around the circle. Visual 3 i am proud of the guitar itself. 
+as the spacing doesnt collide with anything and makes the screen feel full and exciting. 
+###### In Visual 2 
+i am proud of the rotations that i have done around the circle. 
+###### In Visual 3 
+i am proud of the guitar itself. I had to use a vertexes and beginShape() in order to make the guitar work and look good 
 # Markdown Tutorial
 
 This is *emphasis*
