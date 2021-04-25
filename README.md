@@ -25,10 +25,13 @@ To operate the programme you simply open it up and can move to different visuals
 ###### In Visual 1
 There is a lot that i am proud of in this project i feel that the spacing of different objects in Visual 1 is perfect
 as the spacing doesnt collide with anything and makes the screen feel full and exciting. 
+![An image](images/Visual1.png)
 ###### In Visual 2 
 I am proud of the rotations that i have done around the circle. 
+![An image](images/Visual2.png)
 ###### In Visual 3 
-I am proud of the guitar itself. I had to use a vertexes and beginShape() in order to make the guitar work and look good 
+I am proud of the guitar itself. I had to use a vertexes and beginShape() in order to make the guitar work and look good.
+![An image](images/Visual3.png)
 # Markdown Tutorial
 
 This is *emphasis*
