@@ -20,9 +20,6 @@ public abstract class Visual extends PApplet
 
 	private float amplitude  = 0;
 	private float smothedAmplitude = 0;
-
-	
-	
 	public void startMinim() 
 	{
 		minim = new Minim(this);
@@ -63,7 +60,6 @@ public abstract class Visual extends PApplet
 		smothedAmplitude = PApplet.lerp(smothedAmplitude, amplitude, 0.1f);
 	}
 
-
 	protected void calculateFrequencyBands() {
 		for (int i = 0; i < bands.length; i++) {
 			int start = (int) pow(2, i) - 1;
@@ -78,7 +74,6 @@ public abstract class Visual extends PApplet
 			smoothedBands[i] = lerp(smoothedBands[i], bands[i], 0.05f);
 		}
 	}
-
 	public void startListening()
 	{
 		ai = minim.getLineIn(Minim.MONO, frameSize, 44100, 16);
@@ -89,6 +84,7 @@ public abstract class Visual extends PApplet
 	{
 		ap = minim.loadFile(filename, frameSize);
 		ab = ap.mix;
+		ap.play();
 	}
 
 	public int getFrameSize() {
