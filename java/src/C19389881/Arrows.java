@@ -27,6 +27,7 @@ public class Arrows
         float midarrowh=halfheight*4;
         for(int i = 0 ; i < mv.getBands().length ; i ++)
         {
+            mv.colorMode(PApplet.HSB);
             mv.smooth();
             mv.noStroke();
             mv.fill(PApplet.map(i, 255, mv.getBands().length, 255, 255), 255, 255);

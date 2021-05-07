@@ -17,6 +17,8 @@ public class Guitar {
         
         float halfwidth= mv.width/2;
         float halfheight= mv.height/2;
+
+        //guitar drawing
         for(int i = 0 ; i < mv.getBands().length ; i ++)
         {
             mv.smooth();
@@ -26,7 +28,7 @@ public class Guitar {
     
             mv.beginShape();
             
-
+            //body 
             mv.vertex(halfwidth+20, halfheight-220);
             mv.bezierVertex(halfwidth+20, halfheight-220, halfwidth+100, halfheight-210, halfwidth+60, halfheight-80);
             mv.vertex(halfwidth+60, halfheight-80);
@@ -47,9 +49,11 @@ public class Guitar {
             mv.endShape();
             mv.noStroke();
             mv.fill(101, 67, 33);
+            //hole in guitar
             mv.ellipse(halfwidth,halfheight-160,40,40);
             mv.noStroke();
             mv.fill(101, 67, 33);
+            //strumming part 
             mv.quad(halfwidth+15,halfheight-450,halfwidth-15,halfheight-450,halfwidth-10,halfheight-500,halfwidth+10,halfheight-500);
         }
         mv.stroke(255,215,0);
@@ -59,7 +63,7 @@ public class Guitar {
             mv.line(halfwidth+i,halfheight-160,halfwidth+i,halfheight-490);
         }
 
-
+        //nodes
         for(int i = 0 ; i < mv.getBands().length ; i ++)
         {   
             mv.noStroke();
@@ -81,6 +85,8 @@ public class Guitar {
             mv.noFill(); 
             mv.line(halfwidth+360,halfheight-20 -mv.getSmoothedBands()[i] * 0.09f,halfwidth+380,halfheight+20);
         }
+
+        //nodes
         for(int i = 0 ; i < mv.getBands().length ; i ++)
         {   
             mv.noStroke();

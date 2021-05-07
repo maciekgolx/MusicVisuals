@@ -21,6 +21,7 @@ public class Hearts
             mv.noStroke();
             mv.fill(PApplet.map(i, 255, mv.getBands().length, 255, 255), 255, 255);
             
+            //top left 
             mv.beginShape();
             mv.vertex(halfwidth, halfheight);
             mv.bezierVertex(halfwidth, halfheight-20-mv.getSmoothedBands()[i] * 0.2f, halfwidth+40 +mv.getSmoothedBands()[i] * 0.2f, halfheight-10, halfwidth, halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
@@ -28,6 +29,7 @@ public class Hearts
             mv.bezierVertex(halfwidth, halfheight-20- mv.getSmoothedBands()[i] * 0.2f, halfwidth-40 -mv.getSmoothedBands()[i] * 0.2f, halfheight-10, halfwidth, halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
             mv.endShape();
     
+            //top right
             mv.beginShape();
             mv.vertex(halfwidth+halfwidth, halfheight+15);
             mv.bezierVertex(halfwidth+halfwidth, halfheight-20-mv.getSmoothedBands()[i] * 0.2f, halfwidth+halfwidth+40 +mv.getSmoothedBands()[i] * 0.2f, halfheight-10,halfwidth+halfwidth, halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
@@ -35,6 +37,8 @@ public class Hearts
             mv.bezierVertex(halfwidth+halfwidth, halfheight-20- mv.getSmoothedBands()[i] * 0.2f, halfwidth+halfwidth-40 -mv.getSmoothedBands()[i] * 0.2f, halfheight-10, halfwidth+halfwidth, halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
             mv.endShape();
 
+
+            //bottom right
             mv.beginShape();
             mv.vertex(halfwidth+halfwidth, halfheight+halfheight+15);
             mv.bezierVertex(halfwidth+halfwidth, halfheight+halfheight-20-mv.getSmoothedBands()[i] * 0.2f, halfwidth+halfwidth+40 +mv.getSmoothedBands()[i] * 0.2f, halfheight+halfheight-10,halfwidth+halfwidth, halfheight+halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
@@ -42,6 +46,7 @@ public class Hearts
             mv.bezierVertex(halfwidth+halfwidth, halfheight+halfheight-20- mv.getSmoothedBands()[i] * 0.2f, halfwidth+halfwidth-40 -mv.getSmoothedBands()[i] * 0.2f, halfheight+halfheight-10, halfwidth+halfwidth, halfheight+halfheight+25+mv.getSmoothedBands()[i] * 0.2f);
             mv.endShape();
 
+            //bottom left
             mv.beginShape();
             mv.vertex(halfwidth, halfheight+halfheight+15);
             mv.bezierVertex(halfwidth, halfheight+halfheight-20-mv.getSmoothedBands()[i] * 0.2f, halfwidth+40 +mv.getSmoothedBands()[i] * 0.2f, halfheight+halfheight-10,halfwidth, halfheight+halfheight+25+mv.getSmoothedBands()[i] * 0.2f);

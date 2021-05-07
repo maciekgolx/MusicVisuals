@@ -13,6 +13,7 @@ public class MyVisual extends Visual
     Arrows arr;
     CircleThreads cit;
     Guitar gui;
+    Flower flo;
     
     public void settings()
     {
@@ -30,7 +31,7 @@ public class MyVisual extends Visual
         startMinim();
                 
         // Call loadAudio to load an audio file to process 
-        loadAudio("dancin.mp3");
+        loadAudio("lethergo.mp3");
          
         
         // Call this instead to read audio from the microphone
@@ -45,11 +46,12 @@ public class MyVisual extends Visual
         arr=new Arrows(this);
         cit=new CircleThreads(this);
         gui=new Guitar(this);
+        flo=new Flower(this);
     }
 
     public void keyPressed()
     {
-        if (keyCode >= '1' && keyCode <= '3') {
+        if (keyCode >= '1' && keyCode <= '4') {
             which = keyCode - '0';
         }
         if (key == ' ')
@@ -97,6 +99,11 @@ public class MyVisual extends Visual
             case 3:
             { 
                 gui.render();
+            }
+            break;
+            case 4:
+            { 
+                flo.render();
             }
             break;
         }

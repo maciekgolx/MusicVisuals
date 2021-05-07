@@ -18,6 +18,7 @@ public class Bars
         mv.noStroke();
         for(int i = 0 ; i < mv.getBands().length ; i ++)
         {
+            //bars on the side of the screen
             mv.fill(PApplet.map(i, 0, mv.getBands().length, 255, 0), 255, 255);
             mv.rect(mv.width,i * gap,-mv.getSmoothedBands()[i] * 1.0f, gap); 
         

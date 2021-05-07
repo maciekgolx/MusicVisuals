@@ -20,7 +20,7 @@ public class Boxes
             float angle=0;
             mv.stroke(0, 0, 255);
             mv.noFill();
-
+            //left cube
             mv.pushMatrix();
             mv.translate(halfwidth ,halfheight *3 , 0);
             angle = 0.02f ;
@@ -28,7 +28,7 @@ public class Boxes
             mv.rotateY(angle+mv.getSmoothedBands()[1] *0.01f);
             mv.box(100);
             mv.popMatrix();
-
+            //middle cube
             mv.pushMatrix();
             mv.translate(halfwidth*2 ,halfheight *3 , 0);
             angle = 0.02f ;
@@ -36,7 +36,7 @@ public class Boxes
             mv.rotateY(angle+mv.getSmoothedBands()[1] *0.01f);
             mv.box(100);
             mv.popMatrix();
-
+            //right cube
             mv.pushMatrix();
             mv.translate(halfwidth*3 ,halfheight *3 , 0);
             angle = 0.02f ;
