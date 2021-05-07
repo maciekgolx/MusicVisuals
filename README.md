@@ -12,7 +12,7 @@ Student Number: C19389881
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
-The assingement is based on the song Dancin(Krono Remix), its been really influential and a good hype song in the recent years of my life. Ive split the project into 3 different visuals, The first one is a visual of 
+The assingement is based on the song Let her go (Passenger), its been really influential and a good hype song in the recent years of my life. Ive split the project into 4 different visuals, The first one is a visual of 
 - 4 hearts eg. code for one of the hearts
  ```Java
 public void render()
@@ -214,12 +214,80 @@ for(int i = 0 ; i < mv.getBands().length ; i ++)
             mv.line(halfwidth,halfheight-20 -mv.getSmoothedBands()[i] * 0.09f,halfwidth-20,halfheight+20);
         }
 ```
+The 4th visual is based on a flower with pedals rediating and a sun on the side with beams of light .
+- The sun 
+```Java
+ //sun
+            mv.ellipse(halfwidth+850,halfheight-500,500,500);
+
+
+            //sunray 1
+            mv.pushMatrix();
+            mv.translate(halfwidth+55,halfheight-20);
+            mv.rotate(-60);
+            mv.rect(-600, +250, 80 +mv.getSmoothedBands()[i] * 0.09f, -30);
+            mv.popMatrix();
+
+
+            //sunray 2
+            mv.pushMatrix();
+            mv.translate(halfwidth+55,halfheight-20);
+            mv.rotate(+40);
+            mv.rect(-600, -210, 80 +mv.getSmoothedBands()[i] * 0.09f, -30);
+            mv.popMatrix();
+
+
+            //sunray 3
+            mv.pushMatrix();
+            mv.translate(halfwidth+55,halfheight-20);
+            mv.rotate(+90);
+            mv.rect(-500, -510, 80 +mv.getSmoothedBands()[i] * 0.09f, -30);
+            mv.popMatrix();
+```
+- Flower
+```java
+//top
+            mv.beginShape();
+            mv.vertex(halfwidth, halfheight-140 -mv.getSmoothedBands()[i] * 0.09f);
+            mv.bezierVertex(halfwidth, halfheight-90-mv.getSmoothedBands()[i] * 0.09f, halfwidth+35+mv.getSmoothedBands()[i] * 0.09f , halfheight-75, halfwidth , halfheight-50 );
+            mv.vertex(halfwidth, halfheight-140-mv.getSmoothedBands()[i] * 0.09f);
+            mv.bezierVertex(halfwidth, halfheight-90 -mv.getSmoothedBands()[i] * 0.09f, halfwidth-35-mv.getSmoothedBands()[i] * 0.09f , halfheight-75 , halfwidth , halfheight-50  );
+            mv.endShape();
+            
+
+
+           //bot
+            mv.beginShape();
+            mv.vertex(halfwidth, halfheight+140);
+            mv.bezierVertex(halfwidth, halfheight+90, halfwidth+35 , halfheight+75, halfwidth, halfheight+50);
+            mv.vertex(halfwidth, halfheight+140);
+            mv.bezierVertex(halfwidth, halfheight+90, halfwidth-35, halfheight+75, halfwidth, halfheight+50);
+            mv.endShape();
+            
+
+            //right
+            mv.beginShape();
+            mv.vertex(halfwidth+140+mv.getSmoothedBands()[i] * 0.09f, halfheight);
+            mv.bezierVertex(halfwidth+90 +mv.getSmoothedBands()[i] * 0.09f, halfheight, halfwidth+75 , halfheight+35 +mv.getSmoothedBands()[i] * 0.09f, halfwidth+50, halfheight );
+            mv.vertex(halfwidth+140 +mv.getSmoothedBands()[i] * 0.09f, halfheight);
+            mv.bezierVertex(halfwidth+90 +mv.getSmoothedBands()[i] * 0.09f, halfheight, halfwidth+75 , halfheight-35 -mv.getSmoothedBands()[i] * 0.09f, halfwidth+50, halfheight );
+            mv.endShape();
+           
+            //left
+            mv.beginShape();
+            mv.vertex(halfwidth-140-mv.getSmoothedBands()[i] * 0.09f, halfheight);
+            mv.bezierVertex(halfwidth-90-mv.getSmoothedBands()[i] * 0.09f, halfheight, halfwidth-75 , halfheight+35 +mv.getSmoothedBands()[i] * 0.09f, halfwidth-50, halfheight );
+            mv.vertex(halfwidth-140-mv.getSmoothedBands()[i] * 0.09f, halfheight);
+            mv.bezierVertex(halfwidth-90-mv.getSmoothedBands()[i] * 0.09f, halfheight, halfwidth-75 , halfheight-35 -mv.getSmoothedBands()[i] * 0.09f, halfwidth-50, halfheight );
+            mv.endShape();
+```
 # Instructions
 To operate the programme you simply open it up and can move to different visuals using 1, 2 or 3.
 # How it works
 - Visual 1 is accessed by pressing 1
 - Visual 2 is accessed by pressing 2 
 - Visual 3 is accessed by pressing 3
+- Visual 4 is accessed by pressing 4
 # What I am most proud of in the assignment
 ###### In Visual 1
 There is a lot that i am proud of in this project i feel that the spacing of different objects in Visual 1 is perfect
@@ -231,7 +299,10 @@ I am proud of the rotations that i have done around the circle.
 ###### In Visual 3 
 I am proud of the guitar itself. I had to use a vertexes and beginShape() in order to make the guitar work and look good.
 ![An image](images/visual3.png)
+###### In Visual 4 
+I am proud of the Flower. I had to use a vertexes to form the pedals of the flower and made sure they move with the music and  that they look good.
+![An image](images/visual4.png)
 
 This is a youtube video of the project:
 
-[![YouTube](http://img.youtube.com/vi/We_sdcYDPwo/0.jpg)](https://youtu.be/We_sdcYDPwo)
+[![YouTube](http://img.youtube.com/vi/yAt-HJNBOzE/0.jpg)](https://youtu.be/yAt-HJNBOzE)
