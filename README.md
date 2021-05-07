@@ -301,7 +301,7 @@ I am proud of the guitar itself. I had to use a vertexes and beginShape() in ord
 ![An image](images/visual3.png)
 ###### In Visual 4 
 I am proud of the Flower. I had to use a vertexes to form the pedals of the flower and made sure they move with the music and  that they look good.
-![An image](images/visual4.png)
+![An image](images/Visual4.png)
 
 This is a youtube video of the project:
 
